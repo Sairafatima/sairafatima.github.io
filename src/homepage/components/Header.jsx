@@ -4,9 +4,7 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      currentTab: "home",
-    };
+    this.state = {};
   }
 
   render() {
@@ -36,23 +34,24 @@ export default class Header extends Component {
           {tabs.map((tab, index) => {
             return (
               <div
+                key={index}
                 className="header-tab-div"
                 style={
-                  this.state.currentTab !== tab.tab
+                  this.props.currentTab !== tab.tab
                     ? {
                         background: "#E1E8EF",
                       }
                     : {}
                 }
                 onClick={() => {
-                  this.setState({ currentTab: tab.tab });
+                  this.props.setTab(tab.tab);
                 }}
               >
-                <img className="header-tab-icon" src={this.state.currentTab !== tab.tab ? tab.icon : tab.active} alt={""} />
+                <img className="header-tab-icon" src={this.props.currentTab !== tab.tab ? tab.icon : tab.active} alt={""} />
                 <h1
                   className="header-tab-heading"
                   style={
-                    this.state.currentTab === tab.tab
+                    this.props.currentTab === tab.tab
                       ? {
                           color: "#fff",
                         }

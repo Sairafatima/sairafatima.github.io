@@ -5,7 +5,7 @@ function Content(props) {
   return (
     <div className="content-main-container">
       <SideProfile />
-      <ProfileData />
+      <ProfileData tab={props.currentTab} />
     </div>
   );
 }

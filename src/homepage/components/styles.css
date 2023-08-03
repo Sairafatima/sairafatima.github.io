@@ -78,7 +78,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4.493em 2.083em;
+    justify-content: center;
+    padding: 0 2.083em;
     border-radius: 1.66em;
     background: #fff;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
@@ -184,6 +185,101 @@
   .download-resume-button p {
     color: #f2f7fc;
     font: normal normal 600 1em/1.333em Raleway;
+  }
+  .profile-data-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 2em 5.2857em;
+    border-radius: 1.66em;
+    background: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+  .profile-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  .custom-flex-row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+  }
+  .profile-data-header-heading {
+    color: #0b0909;
+    font-family: Poppins;
+    font-size: 2.857em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em; /* 100% */
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .profile-data-header-line {
+    width: 18em;
+    object-fit: contain;
+    margin-left: 2.285em;
+  }
+  .profile-data-about-us {
+    text-align: left;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.1428em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 187%;
+    margin: 1.1428em 0 1.625em 0;
+  }
+  .profile-data-what-i-do {
+    color: #000;
+    font-family: Poppins;
+    font-size: 2.285em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 0.8px;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+
+  .what-i-do-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.66em;
+    padding: 1em 1.785em;
+    margin-left: 2em;
+    margin-top: 2em;
+    width: calc(50% - 1em);
+    height: 12.142em;
+  }
+  .what-i-do-card-icon {
+    width: 1.7142em;
+    object-fit: contain;
+    margin-right: 0.71428em;
+  }
+  .what-i-do-card-heading {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.7142em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+  }
+  .what-i-do-card-content {
+    text-align: left;
+    color: #000;
+    font-family: Raleway;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
+    letter-spacing: 0.35px;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
 }
 
