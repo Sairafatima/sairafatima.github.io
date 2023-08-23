@@ -5,6 +5,7 @@
 @media (min-width: 991.98px) {
   .parent-container {
     font-size: calc(7.5px + 8.5 * ((100vw - 900px) / (1920 - 900)));
+    min-width: 991px;
     padding: 0 8.33em;
     display: flex;
     flex-direction: column;
