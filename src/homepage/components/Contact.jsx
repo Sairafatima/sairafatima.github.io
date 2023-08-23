@@ -43,6 +43,15 @@ export default class Contact extends Component {
               this.handleSubmit(e);
             }}
           >
+            <p
+              className="contact-form-input"
+              style={{ border: 0, textAlign: "left", lineHeight: "187.5%", marginBottom: "1em", marginTop: 0 }}
+            >
+              <span style={{ fontWeight: 400 }}>I am always open to discussing&nbsp;</span>
+              <span style={{ fontWeight: 700 }}>new projects, opportunities in tech world, partnerships</span>
+              <span style={{ fontWeight: 400 }}>&nbsp;and more so</span>
+              <span style={{ fontWeight: 700 }}>mentorship</span>.
+            </p>
             <input
               required
               placeholder="Name:"

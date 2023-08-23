@@ -61,10 +61,10 @@ function SideProfile(props) {
         ) : (
           <></>
         )}
-        <button className="download-resume-button">
+        <a href="/docs/saira_cv.docx" download className="download-resume-button">
           <img className="download-img" src={"/images/social_icons/download.svg"} alt={""} />
           <p>Download Resume</p>
-        </button>
+        </a>
       </div>
     </div>
   );
