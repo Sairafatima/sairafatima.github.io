@@ -49,7 +49,7 @@ export default class Contact extends Component {
             >
               <span style={{ fontWeight: 400 }}>I am always open to discussing&nbsp;</span>
               <span style={{ fontWeight: 700 }}>new projects, opportunities in tech world, partnerships</span>
-              <span style={{ fontWeight: 400 }}>&nbsp;and more so</span>
+              <span style={{ fontWeight: 400 }}>&nbsp;and more so&nbsp;</span>
               <span style={{ fontWeight: 700 }}>mentorship</span>.
             </p>
             <input
