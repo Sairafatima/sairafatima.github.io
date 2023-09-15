@@ -67,6 +67,7 @@
   }
 
   .content-main-container {
+    position: relative;
     height: 42em;
     display: flex;
     flex-direction: row;
@@ -455,6 +456,25 @@
     width: 100%;
     height: 8em;
     object-fit: cover;
+  }
+  .credits-div {
+    position: absolute;
+    width: 100%;
+    padding: 1em 0;
+    bottom: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font: normal normal 600 0.8571em/1.6666em Raleway;
+    margin-bottom: 0;
+  }
+  .credits-div p {
+    margin: 0;
+  }
+  .credits-div a {
+    margin-bottom: 0;
   }
 }
 
