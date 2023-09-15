@@ -5,32 +5,34 @@ function Work(props) {
         <h1 className="profile-data-header-heading">PORTFOLIO</h1>
         <img className="profile-data-header-line" src={"/images/common/content_head_line.svg"} alt={""} />
       </div>
-      {whatIDo.map((card, cIdex) => {
+      {whatIDo.map((card, cIndex) => {
         return (
-          <div className="custom-flex-row what-i-do-card-gap" key={cIdex}>
+          <div className="custom-flex-row what-i-do-card-gap" key={cIndex} style={{ width: "100%" }}>
             {card.map((data, dIndex) => {
               return (
-                <div
+                <a
+                  href={data.link}
                   key={dIndex}
+                  target={"_blank"}
                   className="what-i-do-card"
-                  style={{ background: data.background, marginLeft: dIndex === 0 ? 0 : "", marginTop: cIdex === 0 ? 0 : "" }}
+                  style={{
+                    background: data.background,
+                    marginLeft: dIndex === 0 ? 0 : "",
+                    marginTop: dIndex === 0 ? 0 : "",
+                    cursor: "pointer",
+                    height: "unset",
+                    borderRadius: "8px",
+                  }}
                 >
-                  <div className="custom-flex-row">
-                    {data.icon ? <img className="what-i-do-card-icon" src={data.icon} alt={""} /> : <></>}
+                  <img src={data.img} className="p-work-image" alt={""} />
 
-                    <h className="what-i-do-card-heading">{data.heading}</h>
-                  </div>
-                  <p className="what-i-do-card-content">{data.content}</p>
-
-                  <a
-                    className="what-i-do-card-content"
-                    href={data.link}
-                    style={{ textDecoration: "underline" }}
-                    target={"_blank"}
-                  >
-                    {data.link}
-                  </a>
-                </div>
+                  <p className="resume-card-education" style={{ fontWeight: 400, opacity: 0.4 }}>
+                    {data.type}
+                  </p>
+                  <h1 className="resume-card-education" style={{ marginTop: 0 }}>
+                    {data.heading}
+                  </h1>
+                </a>
               );
             })}
           </div>
@@ -47,15 +49,15 @@ const whatIDo = [
       background: "#FFEBD1",
       link: "https://roomy.io/property-management-system",
       heading: "Property Management System",
-      content:
-        "A cloud-based, integrated platform that integrates operations, accelerates revenue growth and provides outstanding guest experiences.",
+      type: "Development",
+      img: "/images/portfolio/pms.jpg",
     },
     {
       background: "#F2F7FC",
       link: "https://roomy.io/restaurant-management-system",
       heading: "Restaurant Management System",
-      content:
-        "The cloud-based restaurant management system will assist you in streamlining your offerings while focusing on guest satisfaction.",
+      type: "Development",
+      img: "/images/portfolio/rms.jpg",
     },
   ],
   [
@@ -63,15 +65,15 @@ const whatIDo = [
       background: "#F2F7FC",
       link: "https://roomy.pk/",
       heading: "Booking Engine",
-      content:
-        "Boost direct reservations by providing a booking system that encourages recurring business by boosting guests’ confidence when making direct reservations with your hotel.",
+      type: "Development",
+      img: "/images/portfolio/booking_engine.jpg",
     },
     {
       background: "#FFEBD1",
       link: "https://roomy.io/channel-manager",
       heading: "Channel Manager",
-      content:
-        "Using the powerful channel manager provided by Roomy, you can take control and visibility over your hotel’s online points of sale.",
+      type: "Development",
+      img: "/images/portfolio/channel_manager.jpg",
     },
   ],
 ];

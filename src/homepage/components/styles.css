@@ -330,6 +330,7 @@
     font-weight: 600;
     line-height: normal;
     margin: 0.5em 0;
+    text-align: left;
   }
   .mt-1 {
     margin-top: 1.714em;
@@ -448,6 +449,12 @@
     top: 0.25em;
     background-color: grey;
     border-radius: 50%;
+  }
+  .p-work-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 8em;
+    object-fit: cover;
   }
 }
 
