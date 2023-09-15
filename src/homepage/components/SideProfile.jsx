@@ -7,15 +7,22 @@ function SideProfile(props) {
       <h1 className="side-profile-subtitle">{PERSONAL_INFO.designation}</h1>
       <div className="side-profile-icons-row">
         {CONTACT_INFO.linkedin ? (
-          <a className="side-profile-icons-div" href={CONTACT_INFO.linkedin} target="_blank">
+          <a className="side-profile-icons-div" href={CONTACT_INFO.linkedin} target="_blank" title={"LinkedIn"}>
             <img src={"/images/social_icons/linkedin.svg"} alt={""} />
           </a>
         ) : (
           <></>
         )}
         {CONTACT_INFO.github ? (
-          <a className="side-profile-icons-div" href={CONTACT_INFO.github} target="_blank">
+          <a className="side-profile-icons-div" href={CONTACT_INFO.github} target="_blank" title={"GitHub"}>
             <img src={"/images/social_icons/github.svg"} alt={""} />
+          </a>
+        ) : (
+          <></>
+        )}
+        {CONTACT_INFO.leetCode ? (
+          <a className="side-profile-icons-div" href={CONTACT_INFO.leetCode} target="_blank" title={"LeetCode"}>
+            <img src={"/images/social_icons/leetcode.svg"} alt={""} />
           </a>
         ) : (
           <></>

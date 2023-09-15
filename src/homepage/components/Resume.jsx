@@ -31,9 +31,26 @@ export default function Resume(props) {
           style={{ justifyContent: "center", alignItems: "flex-start", gridColumnStart: 2, gridRowStart: 2 }}
         >
           <p className="resume-card-education" style={{ fontWeight: 400, opacity: 0.4 }}>
-            Jan, 2023-Present
+            Dec, 2021 - Present
           </p>
-          <h1 className="resume-card-education">Software Engineer || </h1>
+          <div className="custom-flex-column left-doted-line">
+            <div className="left-doted-line-inner-div">
+              <div className="left-doted-line-dot"></div>
+              <h1 className="resume-card-education" style={{ marginTop: 0 }}>
+                Software Engineer ||
+              </h1>
+            </div>
+
+            <h1 className="resume-card-education" style={{ margin: 0 }}>
+              <div className="left-doted-line-inner-div">
+                <div className="left-doted-line-dot"></div>{" "}
+                <h1 className="resume-card-education" style={{ margin: 0 }}>
+                  Software Engineer
+                </h1>{" "}
+              </div>
+            </h1>
+          </div>
+
           <h1 className="resume-card-education" style={{ fontWeight: 500 }}>
             Roomy Technologies, Islamabad
           </h1>
@@ -43,11 +60,11 @@ export default function Resume(props) {
           style={{ justifyContent: "center", alignItems: "flex-start", gridColumnStart: 2, gridRowStart: 3 }}
         >
           <p className="resume-card-education" style={{ fontWeight: 400, opacity: 0.4 }}>
-            Dec, 2021-Dec, 2022
+            Sep, 2021-Dec, 2021
           </p>
-          <h1 className="resume-card-education">Software Engineer</h1>
+          <h1 className="resume-card-education">DevOps Engineer</h1>
           <h1 className="resume-card-education" style={{ fontWeight: 500 }}>
-            Roomy Technologies, Islamabad
+            SkipQ
           </h1>
         </div>
         <div className="custom-flex-row mt-1" style={{ gridColumnStart: 1, gridRowStart: 4 }}>
@@ -79,6 +96,6 @@ export default function Resume(props) {
   );
 }
 const skills = {
-  soft: ["Time Management", "Flexibility"],
-  work: ["react.js", "Javascript", "HTML5", "CSS", "Git"],
+  soft: ["Time Management", "Flexibility", "Team Work"],
+  work: ["react.js", "Javascript", "HTML5", "CSS", "Git", "Pair & Tri Programming", "Data Structures", "OOP"],
 };

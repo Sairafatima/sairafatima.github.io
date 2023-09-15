@@ -10,11 +10,16 @@
     display: flex;
     flex-direction: column;
     background: #f2f5f9;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     height: 100%;
     user-select: none;
+
+    overflow: visible;
   }
   .header-main-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    top: 0;
     margin: 2em 0;
     display: flex;
     flex-direction: row;
@@ -62,7 +67,7 @@
   }
 
   .content-main-container {
-    height: 100%;
+    height: 42em;
     display: flex;
     flex-direction: row;
     gap: 1.66em;
@@ -77,6 +82,7 @@
 
   .side-profile-main-container {
     width: 25%;
+    min-width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,8 +280,9 @@
     font-size: 1.7142em;
     font-style: normal;
     font-weight: 600;
-    line-height: 100%;
+    line-height: 125%;
     margin: 0;
+    text-align: left;
   }
   .what-i-do-card-content {
     text-align: left;
@@ -312,8 +319,7 @@
     background: #ffe3bf;
     margin-top: 1.714em;
     width: 100%;
-    height: 6.285em;
-    padding: 1em 0.66em;
+    padding: 0.5em 0.66em;
   }
 
   .resume-card-education {
@@ -421,6 +427,27 @@
     font-weight: 600;
     line-height: 166.667%;
     margin: 1em 0 0 0;
+  }
+  .left-doted-line {
+    border-left: 1px dotted grey;
+    margin: 0.5em 0;
+    gap: 0.5em;
+  }
+  .left-doted-line-inner-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding-left: 0.5em;
+  }
+  .left-doted-line-dot {
+    position: absolute;
+    left: -0.25em;
+    width: 0.5em;
+    height: 0.5em;
+    top: 0.25em;
+    background-color: grey;
+    border-radius: 50%;
   }
 }
 
