@@ -11,11 +11,19 @@ export default class Main extends Component {
   render() {
     return (
       <div className="parent-container">
-        <img
+        {/* <img
           alt={""}
-          style={{ position: "absolute", width: "100%", top: "0", left: 0, objectFit: "cover", height: "100%", opacity: 0.4 }}
+          style={{
+            position: "absolute",
+            width: "100%",
+            top: "0",
+            left: 0,
+            objectFit: "cover",
+            height: "100%",
+            opacity: 0.4,
+          }}
           src={"/images/common/background.jpg"}
-        />
+        /> */}
         <Header
           currentTab={this.state.currentTab}
           setTab={(tab) => {
