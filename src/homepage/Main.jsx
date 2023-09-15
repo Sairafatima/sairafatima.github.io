@@ -18,6 +18,14 @@ export default class Main extends Component {
           }}
         />
         <Content currentTab={this.state.currentTab} />
+        <div className="credits-div">
+          <a href={"https://www.figma.com/community/file/1264680769254941322/Portfolio-Design"} target={"_blank"}>
+            Designed by Beatrice Wambui Mbugua
+          </a>
+          <a href={"https://www.linkedin.com/in/saira-fatima-43622315a/"} target={"_blank"}>
+            Developed by Saira Fatima
+          </a>
+        </div>
       </div>
     );
   }

@@ -459,13 +459,16 @@
   }
   .credits-div {
     position: absolute;
+    left: 0;
     width: 100%;
     padding: 1em 0;
     bottom: 0;
     background-color: transparent;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
     color: #000;
     font: normal normal 600 0.8571em/1.6666em Raleway;
     margin-bottom: 0;
