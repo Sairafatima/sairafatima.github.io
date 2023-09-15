@@ -25,7 +25,7 @@ export default class Header extends Component {
       },
     ];
     return (
-      <div className="header-main-container">
+      <>
         <h1 className={"header-name"}>
           Saira &nbsp;<span className={"header-name-grad"}>Fatima</span>
         </h1>
@@ -64,7 +64,7 @@ export default class Header extends Component {
             );
           })}
         </div>
-      </div>
+      </>
     );
   }
 }
