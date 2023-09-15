@@ -60,7 +60,7 @@ export default function Resume(props) {
           style={{ justifyContent: "center", alignItems: "flex-start", gridColumnStart: 2, gridRowStart: 3 }}
         >
           <p className="resume-card-education" style={{ fontWeight: 400, opacity: 0.4 }}>
-            Sep, 2021-Dec, 2021
+            Sep, 2021 - Dec, 2021
           </p>
           <h1 className="resume-card-education">DevOps Engineer</h1>
           <h1 className="resume-card-education" style={{ fontWeight: 500 }}>
