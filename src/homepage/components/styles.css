@@ -141,11 +141,11 @@
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  padding: 1.062em 2.062em 2.062em 2.062em;
+  padding: 0 0em 2.062em 0em;
   margin: 0 0 2em 0em;
   border-radius: 1.66em;
-  background: #f2f5f9;
-  width: -moz-available;
+  background: #fff;
+
   overflow: hidden;
 }
 
