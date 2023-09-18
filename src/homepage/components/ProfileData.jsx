@@ -5,12 +5,14 @@ import Work from "./Work";
 
 function ProfileData(props) {
   return (
-    <div className="profile-data-card">
-      {props.tab === "home" && <Home />}
-      {props.tab === "resume" && <Resume />}
-      {props.tab === "work" && <Work />}
-      {props.tab === "contact" && <Contact />}
-    </div>
+    <>
+      <div className="profile-data-card">
+        {props.tab === "home" && <Home />}
+        {props.tab === "resume" && <Resume />}
+        {props.tab === "work" && <Work />}
+        {props.tab === "contact" && <Contact />}
+      </div>
+    </>
   );
 }
 

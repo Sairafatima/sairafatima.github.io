@@ -13,7 +13,7 @@ function Home(props) {
       <h1 className="profile-data-what-i-do">What I do!</h1>
       {whatIDo.map((card, cIdex) => {
         return (
-          <div className="custom-flex-row what-i-do-card-gap" key={cIdex}>
+          <div className="custom-flex-row what-i-do-card-gap row-to-col" key={cIdex}>
             {card.map((data, dIndex) => {
               return (
                 <div

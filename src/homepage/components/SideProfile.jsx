@@ -1,6 +1,9 @@
+import Home from "./Home";
+import ProfileData from "./ProfileData";
 import { CONTACT_INFO, PERSONAL_INFO } from "./userContent";
 
 function SideProfile(props) {
+  console.log("props", props);
   return (
     <div className="side-profile-main-container">
       <h1 className="side-profile-name">{PERSONAL_INFO.name}</h1>
@@ -28,51 +31,57 @@ function SideProfile(props) {
           <></>
         )}
       </div>
-      <div className="side-profile-info-card">
-        {CONTACT_INFO.phone ? (
-          <div className="side-profile-info-row-1">
-            <div className="side-profile-info-row-img">
-              <img src={"/images/social_icons/phone.svg"} alt={""} />
+      {props.screenWidth <= 575.98 && props.tab !== "contact" ? (
+        <></>
+      ) : (
+        <div className="side-profile-info-card">
+          {CONTACT_INFO.phone ? (
+            <div className="side-profile-info-row-1">
+              <div className="side-profile-info-row-img">
+                <img src={"/images/social_icons/phone.svg"} alt={""} />
+              </div>
+              <div className="side-profile-info-row-2">
+                <h1 className="side-profile-info-heading">Phone</h1>
+                <p className="side-profile-info-sub"> {CONTACT_INFO.phone}</p>
+              </div>
             </div>
-            <div className="side-profile-info-row-2">
-              <h1 className="side-profile-info-heading">Phone</h1>
-              <p className="side-profile-info-sub"> {CONTACT_INFO.phone}</p>
+          ) : (
+            <></>
+          )}
+          {CONTACT_INFO.email ? (
+            <a className="side-profile-info-row-1" href="mailto: saira@gmail.com">
+              <div className="side-profile-info-row-img">
+                <img src={"/images/social_icons/email.svg"} alt={""} />
+              </div>
+              <div className="side-profile-info-row-2">
+                <h1 className="side-profile-info-heading">Email</h1>
+                <p className="side-profile-info-sub"> {CONTACT_INFO.email}</p>
+              </div>
+            </a>
+          ) : (
+            <></>
+          )}
+          {CONTACT_INFO.location ? (
+            <div className="side-profile-info-row-1">
+              <div className="side-profile-info-row-img">
+                <img src={"/images/social_icons/location.svg"} alt={""} />
+              </div>
+              <div className="side-profile-info-row-2">
+                <h1 className="side-profile-info-heading">Location</h1>
+                <p className="side-profile-info-sub"> {CONTACT_INFO.location}</p>
+              </div>
             </div>
-          </div>
-        ) : (
-          <></>
-        )}
-        {CONTACT_INFO.email ? (
-          <a className="side-profile-info-row-1" href="mailto: saira@gmail.com">
-            <div className="side-profile-info-row-img">
-              <img src={"/images/social_icons/email.svg"} alt={""} />
-            </div>
-            <div className="side-profile-info-row-2">
-              <h1 className="side-profile-info-heading">Email</h1>
-              <p className="side-profile-info-sub"> {CONTACT_INFO.email}</p>
-            </div>
+          ) : (
+            <></>
+          )}
+          <a href="/docs/saira_cv.docx" download className="download-resume-button">
+            <img className="download-img" src={"/images/social_icons/download.svg"} alt={""} />
+            <p>Download Resume</p>
           </a>
-        ) : (
-          <></>
-        )}
-        {CONTACT_INFO.location ? (
-          <div className="side-profile-info-row-1">
-            <div className="side-profile-info-row-img">
-              <img src={"/images/social_icons/location.svg"} alt={""} />
-            </div>
-            <div className="side-profile-info-row-2">
-              <h1 className="side-profile-info-heading">Location</h1>
-              <p className="side-profile-info-sub"> {CONTACT_INFO.location}</p>
-            </div>
-          </div>
-        ) : (
-          <></>
-        )}
-        <a href="/docs/saira_cv.docx" download className="download-resume-button">
-          <img className="download-img" src={"/images/social_icons/download.svg"} alt={""} />
-          <p>Download Resume</p>
-        </a>
-      </div>
+        </div>
+      )}
+
+      {props.screenWidth <= 575.98 && <ProfileData tab={props.tab} />}
     </div>
   );
 }
