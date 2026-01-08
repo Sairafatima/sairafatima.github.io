@@ -26,7 +26,8 @@ class About extends Component {
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
+                    height="200px"
+                    width={"200px"}
                     style={{ objectFit: "cover" }}
                     src={projectImage}
                     alt="Avatar placeholder"
@@ -40,10 +41,10 @@ class About extends Component {
                     icon={vueIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
-                  <Icon
+                  {/* <Icon
                     icon={nextIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
+                  /> */}
                 </span>
               </div>
             </div>

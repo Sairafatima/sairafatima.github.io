@@ -80,7 +80,7 @@ class App extends Component {
 
   Basic_info = {
     name: "Saira Fatima",
-    titles: ["Senior Frontend Developer", "React JS Developer"],
+    titles: ["Frontend Developer", "React JS Developer"],
   };
   ResumeBasic_info = {
     section_name: {
