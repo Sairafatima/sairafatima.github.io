@@ -13,7 +13,16 @@ class Skills extends Component {
         class: "devicon-css3-plain",
         level: "95",
       },
-
+      {
+        name: "React",
+        class: "devicon-react-plain",
+        level: "90",
+      },
+      {
+        name: "React",
+        class: "devicon-redux-original",
+        level: "90",
+      },
       {
         name: "TypeScript",
         class: "devicon-typescript-plain",
@@ -32,6 +41,37 @@ class Skills extends Component {
       {
         name: "Bootstrap",
         class: "devicon-bootstrap-plain",
+        level: "85",
+      },
+      {
+        name: "Tailwind",
+        class: "devicon-tailwindcss-original",
+        level: "75",
+      },
+      {
+        name: "Material UI",
+        class: "devicon-materialui-plain",
+        level: "75",
+      },
+      {
+        name: "Swagger",
+        class: "devicon-swagger-plain",
+        level: "85",
+      },
+      {
+        name: "Axios",
+        class: "devicon-axios-plain",
+        level: "85",
+      },
+
+      {
+        name: "Webpack",
+        class: "devicon-webpack-plain",
+        level: "85",
+      },
+      {
+        name: "Git",
+        class: "devicon-github-plain",
         level: "85",
       },
     ],

@@ -173,7 +173,7 @@ class App extends Component {
       <div>
         <Header sharedData={this.Basic_info} />
         <div className="col-md-12 mx-auto text-center language">
-          <div
+          {/* <div
             // onClick={() =>
             //   this.applyPickedLanguage(
             //     window.$primaryLanguage,
@@ -187,7 +187,7 @@ class App extends Component {
               data-icon="twemoji-flag-for-flag-united-kingdom"
               data-inline="false"
             ></span>
-          </div>
+          </div> */}
           {/* <div
             onClick={() =>
               this.applyPickedLanguage(

@@ -11,6 +11,7 @@ class ProjectDetailsModal extends Component {
       const images = this.props.data.images;
       var title = this.props.data.title;
       var description = this.props.data.description;
+      var list = this.props.data.list || [];
       var url = this.props.data.url;
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
@@ -93,7 +94,22 @@ class ProjectDetailsModal extends Component {
                 </a>
               ) : null}
             </h3>
+
             <p className="modal-description">{description}</p>
+            {list.length ? (
+              <ol>
+                {list.map((elm) => (
+                  <li>
+                    <p
+                      className="modal-description"
+                      style={{ marginBottom: 0 }}
+                    >
+                      {elm}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+            ) : null}
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
             </div>
